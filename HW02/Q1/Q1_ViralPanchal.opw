@@ -1,0 +1,21 @@
+[RESOURCES]
+Single clerk
+Stock person 2
+Stock person 1
+[VARIABLES]
+Check orders and process payments.WaitTime
+Retrieve orders 2.VATime
+Retrieve orders 1.VATime
+Check orders and process payments.NumberIn
+Check orders and process payments.NumberOut
+Customer Arrivals.NumberOut
+Retrieve orders 2.WaitTime
+Retrieve orders 1.WaitTime
+Customer Leave System.NumberOut
+Retrieve orders 2.NumberOut
+Retrieve orders 1.NumberOut
+Retrieve orders 2.NumberIn
+Retrieve orders 1.NumberIn
+Random Allocation.NumberOut False
+Random Allocation.NumberOut True
+Check orders and process payments.VATime

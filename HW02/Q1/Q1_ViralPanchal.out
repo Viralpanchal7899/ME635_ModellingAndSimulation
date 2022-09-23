@@ -1,0 +1,85 @@
+
+                                      ARENA Simulation Results
+                                                viral
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 9/23/2022
+Analyst: viral                                                       Model revision date: 9/23/2022
+
+Replication ended at time      : 83.333333 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Retrieve orders 2.WaitTimePerEntity         .50944     (Insuf)    .00000     1.7203        254    
+Retrieve orders 1.VATimePerEntity           .30013     (Insuf)    .26688     .33324        262    
+Retrieve orders 2.VATimePerEntity           .30035     (Insuf)    .26687     .33320        254    
+Retrieve orders 2.TotalTimePerEntity        .80980     (Insuf)    .26709     2.0514        254    
+Check orders and process payments.VATimePe  .14900     .00105     .13172     .16657        516    
+Check orders and process payments.WaitTime  .69333     (Corr)     .00000     2.1826        516    
+Retrieve orders 1.WaitTimePerEntity         .54572     (Insuf)    .00000     1.5234        262    
+Check orders and process payments.TotalTim  .84234     (Corr)     .13375     2.3207        516    
+Retrieve orders 1.TotalTimePerEntity        .84585     (Insuf)    .27920     1.8432        262    
+Customers.VATime                            .44924     .00222     .40321     .49748        516    
+Customers.NVATime                           .00000     .00000     .00000     .00000        516    
+Customers.WaitTime                          1.2212     (Corr)     .00000     3.1642        516    
+Customers.TranTime                          .00000     .00000     .00000     .00000        516    
+Customers.OtherTime                         .00000     .00000     .00000     .00000        516    
+Customers.TotalTime                         1.6704     (Corr)     .42228     3.6292        516    
+Check orders and process payments.Queue.Wa  .69333     (Corr)     .00000     2.1826        516    
+Retrieve orders 2.Queue.WaitingTime         .50944     (Insuf)    .00000     1.7203        254    
+Retrieve orders 1.Queue.WaitingTime         .54572     (Insuf)    .00000     1.5234        262    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customers.WIP                               10.343     (Corr)     .00000     24.000     .00000    
+Single clerk.NumberBusy                     .92264     (Insuf)    .00000     1.0000     .00000    
+Single clerk.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Single clerk.Utilization                    .92264     (Insuf)    .00000     1.0000     .00000    
+Stock person 2.NumberBusy                   .91548     (Insuf)    .00000     1.0000     .00000    
+Stock person 2.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Stock person 2.Utilization                  .91548     (Insuf)    .00000     1.0000     .00000    
+Stock person 1.NumberBusy                   .94360     (Insuf)    .00000     1.0000     .00000    
+Stock person 1.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Stock person 1.Utilization                  .94360     (Insuf)    .00000     1.0000     .00000    
+Check orders and process payments.Queue.Nu  4.2931     (Corr)     .00000     15.000     .00000    
+Retrieve orders 2.Queue.NumberInQueue       1.5527     .49719     .00000     6.0000     .00000    
+Retrieve orders 1.Queue.NumberInQueue       1.7157     (Corr)     .00000     6.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Check orders and process payments Accum Wa  357.76    
+Retrieve orders 2 Accum VA Time             76.289    
+Retrieve orders 1 Accum VA Time             78.632    
+Check orders and process payments Number I  516.00    
+Check orders and process payments Number O  516.00    
+Retrieve orders 2 Accum Wait Time           129.39    
+Retrieve orders 1 Accum Wait Time           142.97    
+Retrieve orders 2 Number Out                254.00    
+Retrieve orders 1 Number Out                262.00    
+Retrieve orders 2 Number In                 254.00    
+Retrieve orders 1 Number In                 262.00    
+Check orders and process payments Accum VA  76.886    
+Customers.NumberIn                          516.00    
+Customers.NumberOut                         516.00    
+Single clerk.NumberSeized                   516.00    
+Single clerk.ScheduledUtilization           .92264    
+Stock person 2.NumberSeized                 254.00    
+Stock person 2.ScheduledUtilization         .91548    
+Stock person 1.NumberSeized                 262.00    
+Stock person 1.ScheduledUtilization         .94360    
+System.NumberOut                            516.00    
+
+
+Simulation run time: 0.03 minutes.
+Simulation run complete.

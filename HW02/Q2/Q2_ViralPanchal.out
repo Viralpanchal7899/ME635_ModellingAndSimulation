@@ -1,0 +1,82 @@
+SIMAN Run Controller.
+
+0.0 Hours>
+                                      ARENA Simulation Results
+                                                viral
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 9/23/2022
+Analyst: viral                                                       Model revision date: 9/23/2022
+
+Replication ended at time      : 2.7777778 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Inspection process.VATimePerEntity          .03821     (Insuf)    .03036     .04754         44    
+Workstation process.TotalTimePerEntity      .01562     .00270     .00451     .04197        447    
+Inspection process.TotalTimePerEntity       .06331     (Insuf)    .03036     .14647         44    
+Workstation process.WaitTimePerEntity       .01037     .00270     .00000     .03676        447    
+Workstation process.VATimePerEntity         .00525     3.0210E-05 .00449     .00607        447    
+Inspection process.WaitTimePerEntity        .02510     (Insuf)    .00000     .11257         44    
+Entity 1.VATime                             .00902     9.4555E-04 .00449     .05324        445    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        445    
+Entity 1.WaitTime                           .01281     .00281     .00000     .11452        445    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        445    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        445    
+Entity 1.TotalTime                          .02183     .00308     .00451     .15413        445    
+Inspection process.Queue.WaitingTime        .02454     (Insuf)    .00000     .11257         45    
+Workstation process.Queue.WaitingTime       .01041     .00266     .00000     .03676        448    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.6155     (Insuf)    .00000     15.000     12.000    
+Inspection.NumberBusy                       .61528     (Insuf)    .00000     1.0000     1.0000    
+Inspection.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Inspection.Utilization                      .61528     (Insuf)    .00000     1.0000     1.0000    
+Workstation.NumberBusy                      .84439     (Insuf)    .00000     1.0000     1.0000    
+Workstation.NumberScheduled                 1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Workstation.Utilization                     .84439     (Insuf)    .00000     1.0000     1.0000    
+Inspection process.Queue.NumberInQueue      .40556     (Insuf)    .00000     3.0000     1.0000    
+Workstation process.Queue.NumberInQueue     1.7503     (Insuf)    .00000     12.000     9.0000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Number of inspected parts                        44  Infinite
+Number of scrapped parts                          4  Infinite
+Number of good parts                            441  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Workstation process Accum Wait Time         4.6363    
+Inspection process Accum VA Time            1.6811    
+Workstation process Accum VA Time           2.3446    
+Workstation process Number In               457.00    
+Inspection process Accum Wait Time          1.1043    
+Workstation process Number Out              447.00    
+Inspection process Number In                46.000    
+Inspection process Number Out               44.000    
+Entity 1.NumberIn                           457.00    
+Entity 1.NumberOut                          445.00    
+Inspection.NumberSeized                     45.000    
+Inspection.ScheduledUtilization             .61528    
+Workstation.NumberSeized                    448.00    
+Workstation.ScheduledUtilization            .84439    
+System.NumberOut                            445.00    
+
+
+Simulation run time: 0.03 minutes.
+Simulation run complete.

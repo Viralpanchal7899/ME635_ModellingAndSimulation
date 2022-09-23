@@ -1,0 +1,19 @@
+[RESOURCES]
+Inspection
+Workstation
+[VARIABLES]
+Workstation process.WaitTime
+Inspection process.VATime
+Workstation process.VATime
+Workstation process.NumberIn
+Inspection process.WaitTime
+Inpection.NumberOut False
+Send to scrap.NumberOut False
+Workstation process.NumberOut
+Inspection process.NumberIn
+Dispose 1.NumberOut
+Inspection process.NumberOut
+Send to scrap.NumberOut True
+Parts.NumberOut
+Dispose 3.NumberOut
+Inpection.NumberOut True
