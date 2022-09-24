@@ -4,35 +4,35 @@
 
                                   Summary for Replication 1 of 1
 
-Project: Unnamed Project                                             Run execution date : 9/23/2022
-Analyst: viral                                                       Model revision date: 9/23/2022
+Project: Unnamed Project                                             Run execution date : 9/24/2022
+Analyst: viral                                                       Model revision date: 9/24/2022
 
-Replication ended at time      : 83.333333 Hours 
-Base Time Units: Hours
+Replication ended at time      : 5000.0 Minutes 
+Base Time Units: Minutes
 
                                            TALLY VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Retrieve orders 2.WaitTimePerEntity         .50944     (Insuf)    .00000     1.7203        254    
-Retrieve orders 1.VATimePerEntity           .30013     (Insuf)    .26688     .33324        262    
-Retrieve orders 2.VATimePerEntity           .30035     (Insuf)    .26687     .33320        254    
-Retrieve orders 2.TotalTimePerEntity        .80980     (Insuf)    .26709     2.0514        254    
-Check orders and process payments.VATimePe  .14900     .00105     .13172     .16657        516    
-Check orders and process payments.WaitTime  .69333     (Corr)     .00000     2.1826        516    
-Retrieve orders 1.WaitTimePerEntity         .54572     (Insuf)    .00000     1.5234        262    
-Check orders and process payments.TotalTim  .84234     (Corr)     .13375     2.3207        516    
-Retrieve orders 1.TotalTimePerEntity        .84585     (Insuf)    .27920     1.8432        262    
-Customers.VATime                            .44924     .00222     .40321     .49748        516    
+Retrieve orders 2.WaitTimePerEntity         30.566     (Insuf)    .00000     103.21        254    
+Retrieve orders 1.VATimePerEntity           18.007     (Insuf)    16.013     19.994        262    
+Retrieve orders 2.VATimePerEntity           18.021     (Insuf)    16.012     19.991        254    
+Retrieve orders 2.TotalTimePerEntity        48.587     (Insuf)    16.025     123.08        254    
+Check orders and process payments.VATimePe  8.9402     .06297     7.9029     9.9944        516    
+Check orders and process payments.WaitTime  41.600     (Corr)     .00000     130.96        516    
+Retrieve orders 1.WaitTimePerEntity         32.743     (Insuf)    .00000     91.404        262    
+Check orders and process payments.TotalTim  50.540     (Corr)     8.0250     139.24        516    
+Retrieve orders 1.TotalTimePerEntity        50.751     (Insuf)    16.751     110.59        262    
+Customers.VATime                            26.954     .13296     24.192     29.849        516    
 Customers.NVATime                           .00000     .00000     .00000     .00000        516    
-Customers.WaitTime                          1.2212     (Corr)     .00000     3.1642        516    
+Customers.WaitTime                          73.271     (Corr)     .00000     189.85        516    
 Customers.TranTime                          .00000     .00000     .00000     .00000        516    
 Customers.OtherTime                         .00000     .00000     .00000     .00000        516    
-Customers.TotalTime                         1.6704     (Corr)     .42228     3.6292        516    
-Check orders and process payments.Queue.Wa  .69333     (Corr)     .00000     2.1826        516    
-Retrieve orders 2.Queue.WaitingTime         .50944     (Insuf)    .00000     1.7203        254    
-Retrieve orders 1.Queue.WaitingTime         .54572     (Insuf)    .00000     1.5234        262    
+Customers.TotalTime                         100.22     (Corr)     25.336     217.75        516    
+Check orders and process payments.Queue.Wa  41.600     (Corr)     .00000     130.96        516    
+Retrieve orders 2.Queue.WaitingTime         30.566     (Insuf)    .00000     103.21        254    
+Retrieve orders 1.Queue.WaitingTime         32.743     (Insuf)    .00000     91.404        262    
 
                                      DISCRETE-CHANGE VARIABLES
 
@@ -50,7 +50,7 @@ Stock person 1.NumberBusy                   .94360     (Insuf)    .00000     1.0
 Stock person 1.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
 Stock person 1.Utilization                  .94360     (Insuf)    .00000     1.0000     .00000    
 Check orders and process payments.Queue.Nu  4.2931     (Corr)     .00000     15.000     .00000    
-Retrieve orders 2.Queue.NumberInQueue       1.5527     .49719     .00000     6.0000     .00000    
+Retrieve orders 2.Queue.NumberInQueue       1.5527     (Corr)     .00000     6.0000     .00000    
 Retrieve orders 1.Queue.NumberInQueue       1.7157     (Corr)     .00000     6.0000     .00000    
 
                                              OUTPUTS
@@ -58,18 +58,18 @@ Retrieve orders 1.Queue.NumberInQueue       1.7157     (Corr)     .00000     6.0
 Identifier                                   Value
 _____________________________________________________________
 
-Check orders and process payments Accum Wa  357.76    
-Retrieve orders 2 Accum VA Time             76.289    
-Retrieve orders 1 Accum VA Time             78.632    
+Check orders and process payments Accum Wa  21465.    
+Retrieve orders 2 Accum VA Time             4577.3    
+Retrieve orders 1 Accum VA Time             4717.9    
 Check orders and process payments Number I  516.00    
 Check orders and process payments Number O  516.00    
-Retrieve orders 2 Accum Wait Time           129.39    
-Retrieve orders 1 Accum Wait Time           142.97    
+Retrieve orders 2 Accum Wait Time           7763.9    
+Retrieve orders 1 Accum Wait Time           8578.7    
 Retrieve orders 2 Number Out                254.00    
 Retrieve orders 1 Number Out                262.00    
 Retrieve orders 2 Number In                 254.00    
 Retrieve orders 1 Number In                 262.00    
-Check orders and process payments Accum VA  76.886    
+Check orders and process payments Accum VA  4613.1    
 Customers.NumberIn                          516.00    
 Customers.NumberOut                         516.00    
 Single clerk.NumberSeized                   516.00    

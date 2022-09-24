@@ -9,5 +9,5 @@ MaxScanRows=8
 MaxBufferSize=2048
 FIL=MS Access
 DriverId=281
-DefaultDir=c:\My files\Study\ME 635\Week 2
+DefaultDir=C:\My files\Study\ME 635\HW02\Q1
 DBQ=C:\My files\Study\ME 635\HW02\Q1\Q1_ViralPanchal.accdb

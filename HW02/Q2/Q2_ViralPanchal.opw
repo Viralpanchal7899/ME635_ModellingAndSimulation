@@ -6,8 +6,8 @@ Workstation process.WaitTime
 Inspection process.VATime
 Workstation process.VATime
 Workstation process.NumberIn
-Inspection process.WaitTime
 Inpection.NumberOut False
+Inspection process.WaitTime
 Send to scrap.NumberOut False
 Workstation process.NumberOut
 Inspection process.NumberIn
