@@ -1,0 +1,128 @@
+SIMAN Run Controller.
+
+0.0 Minutes>SIMAN Run Controller.
+
+559.62802 Minutes>
+                                      ARENA Simulation Results
+                                                viral
+
+                                  Summary for Replication 1 of 1
+
+Project: Electronic Assembly and Test                                Run execution date : 9/26/2022
+Analyst: Mr. Munchkin                                                Model revision date: 9/26/2022
+
+Replication ended at time      : 559.62802 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Sealer Process.TotalTimePerEntity           2.3553     (Insuf)    1.5158     3.0974         40    
+Rework Process.WaitTimePerEntity            .00000     (Insuf)    .00000     .00000          2    
+Sealer Process.WaitTimePerEntity            .00000     (Insuf)    .00000     .00000         40    
+Record Scrapped Parts                           --         --         --         --          0
+Rework Process.TotalTimePerEntity           123.79     (Insuf)    15.940     231.65          2    
+Rework Process.VATimePerEntity              123.79     (Insuf)    15.940     231.65          2    
+Prep B Process.VATimePerEntity              6.0231     (Insuf)    3.5187     9.6960         40    
+Prep A Process.VATimePerEntity                  --         --         --         --          0
+Prep B Process.WaitTimePerEntity            16.714     (Insuf)    .00000     42.893         40    
+Prep A Process.WaitTimePerEntity                --         --         --         --          0
+Sealer Process.VATimePerEntity              2.3553     (Insuf)    1.5158     3.0974         40    
+Prep B Process.TotalTimePerEntity           22.737     (Insuf)    4.2820     48.039         40    
+Prep A Process.TotalTimePerEntity               --         --         --         --          0
+Record Salvaged Parts                       147.66     (Insuf)    32.268     263.06          2    
+Record Shipped Parts                        25.157     (Insuf)    6.0088     51.136         38    
+Part B.VATime                               14.568     (Insuf)    5.8388     239.33         40    
+Part B.NVATime                              .00000     (Insuf)    .00000     .00000         40    
+Part B.WaitTime                             16.714     (Insuf)    .00000     42.893         40    
+Part B.TranTime                             .00000     (Insuf)    .00000     .00000         40    
+Part B.OtherTime                            .00000     (Insuf)    .00000     .00000         40    
+Part B.TotalTime                            31.282     (Insuf)    6.0088     263.06         40    
+Part A.VATime                                   --         --         --         --          0
+Part A.NVATime                                  --         --         --         --          0
+Part A.WaitTime                                 --         --         --         --          0
+Part A.TranTime                                 --         --         --         --          0
+Part A.OtherTime                                --         --         --         --          0
+Part A.TotalTime                                --         --         --         --          0
+Sealer Process.Queue.WaitingTime            .00000     (Insuf)    .00000     .00000         40    
+Prep B Process.Queue.WaitingTime            16.714     (Insuf)    .00000     42.893         40    
+Prep A Process.Queue.WaitingTime                --         --         --         --          0
+Rework Process.Queue.WaitingTime            .00000     (Insuf)    .00000     .00000          2    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part B.WIP                                  2.2359     (Insuf)    .00000     10.000     .00000    
+Part A.WIP                                  56.211     (Insuf)    .00000     118.00     118.00    
+Prep A.NumberBusy                           .00000     (Insuf)    .00000     .00000     .00000    
+Prep A.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Prep A.Utilization                          .00000     (Insuf)    .00000     .00000     .00000    
+Prep B.NumberBusy                           .43051     (Insuf)    .00000     1.0000     .00000    
+Prep B.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Prep B.Utilization                          .43051     (Insuf)    .00000     1.0000     .00000    
+Rework.NumberBusy                           .44242     (Insuf)    .00000     1.0000     .00000    
+Rework.NumberScheduled                      1.1422     (Insuf)    1.0000     2.0000     2.0000    
+Rework.Utilization                          .44242     (Insuf)    .00000     1.0000     .00000    
+Sealer.NumberBusy                           .16835     (Insuf)    .00000     1.0000     .00000    
+Sealer.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Sealer.Utilization                          .16835     (Insuf)    .00000     1.0000     .00000    
+Sealer Process.Queue.NumberInQueue          .00000     (Insuf)    .00000     .00000     .00000    
+Prep B Process.Queue.NumberInQueue          1.1946     (Insuf)    .00000     8.0000     .00000    
+Prep A Process.Queue.NumberInQueue          .00000     (Insuf)    .00000     .00000     .00000    
+Rework Process.Queue.NumberInQueue          .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Sealer Process Number In                    40.000    
+Sealer Process Number Out                   40.000    
+Rework Process Accum Wait Time              .00000    
+Sealer Process Accum Wait Time              .00000    
+Rework Process Number In                    2.0000    
+Rework Process Number Out                   2.0000    
+Rework Process Accum VA Time                247.59    
+Sealer Process Accum VA Time                94.215    
+Prep B Process Accum Wait Time              668.58    
+Prep A Process Accum Wait Time              .00000    
+Prep B Process Number In                    40.000    
+Prep A Process Number In                    .00000    
+Prep B Process Number Out                   40.000    
+Prep A Process Number Out                   .00000    
+Prep B Process Accum VA Time                240.92    
+Prep A Process Accum VA Time                .00000    
+Part B.NumberIn                             40.000    
+Part B.NumberOut                            40.000    
+Part A.NumberIn                             118.00    
+Part A.NumberOut                            .00000    
+Prep A.NumberSeized                         .00000    
+Prep A.ScheduledUtilization                 .00000    
+Prep B.NumberSeized                         40.000    
+Prep B.ScheduledUtilization                 .43051    
+Rework.NumberSeized                         2.0000    
+Rework.ScheduledUtilization                 .38731    
+Sealer.NumberSeized                         40.000    
+Sealer.ScheduledUtilization                 .16835    
+System.NumberOut                            40.000    
+
+                                           FREQUENCIES
+
+                                                            --Occurrences--    Standard  Restricted
+Identifier                                 Category         Number  AvgTime    Percent   Percent
+___________________________________________________________________________________________________
+
+Rework queue stats                         0 Racks          1       559.62      100.00    100.00
+
+Sealer Stats                               BUSY             40      2.3553       16.84     16.84
+                                           IDLE             46      9.7374       80.04     80.04
+                                           FAILED           5       3.4984        3.13      3.13
+
+
+
+Simulation run time: 0.57 minutes.
+Simulation run complete.
