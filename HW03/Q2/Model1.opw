@@ -1,0 +1,24 @@
+[RESOURCES]
+Workstation 2 Machine
+Workstation 4 Machine
+Workstation 1 Machine
+Workstation 3 Machine
+[VARIABLES]
+End.NumberOut
+Workstation 2.WaitTime
+Workstation 4.NumberOut
+Workstation 2.VATime
+Workstation 4.NumberIn
+Workstation 4.VATime
+Workstation 1.WaitTime
+Workstation 2.NumberIn
+Workstation 3.NumberIn
+Workstation 2.NumberOut
+Workstation 3.NumberOut
+Workstation 4.WaitTime
+Workstation 1.VATime
+Create arrivals.NumberOut
+Workstation 1.NumberOut
+Workstation 1.NumberIn
+Workstation 3.VATime
+Workstation 3.WaitTime

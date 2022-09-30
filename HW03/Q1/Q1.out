@@ -1,0 +1,64 @@
+
+                                      ARENA Simulation Results
+                                                viral
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 9/30/2022
+Analyst: viral                                                       Model revision date: 9/30/2022
+
+Replication ended at time      : 14400.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Item.VATime                                 5.7450     .01151     4.5429     8.5160      12922    
+Item.NVATime                                .00000     .00000     .00000     .00000      12922    
+Item.WaitTime                               17.051     (Corr)     .00000     62.414      12922    
+Item.TranTime                               .00000     .00000     .00000     .00000      12922    
+Item.OtherTime                              .00000     .00000     .00000     .00000      12922    
+Item.TotalTime                              22.796     (Corr)     4.6718     69.746      12922    
+Domestic Process.Queue.WaitingTime          9.0139     (Corr)     .00000     44.517      10346    
+International Process.Queue.WaitingTime     7.9474     1.2540     .00000     45.324       2578    
+Packing Process.Queue.WaitingTime           8.2488     .97799     .00000     37.926      12925    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Item.WIP                                    20.468     1.8951     .00000     58.000     19.000    
+Packers.NumberBusy                          3.0076     .05494     .00000     4.0000     .00000    
+Packers.NumberScheduled                     3.4458     (Insuf)    .00000     4.0000     .00000    
+Packers.Utilization                         .75871     .01355     .00000     1.0000     .00000    
+Domestic Shipping.NumberBusy                1.5340     .03690     .00000     2.0000     2.0000    
+Domestic Shipping.NumberScheduled           1.7349     (Insuf)    .00000     2.0000     2.0000    
+Domestic Shipping.Utilization               .76957     .01834     .00000     1.0000     1.0000    
+International Shipping.NumberBusy           .61451     .02202     .00000     1.0000     .00000    
+International Shipping.NumberScheduled      .86851     (Insuf)    .00000     1.0000     1.0000    
+International Shipping.Utilization          .61451     .02202     .00000     1.0000     .00000    
+Domestic Process.Queue.NumberInQueue        6.4771     (Corr)     .00000     37.000     1.0000    
+International Process.Queue.NumberInQueue   1.4228     .22379     .00000     12.000     .00000    
+Packing Process.Queue.NumberInQueue         7.4126     .89605     .00000     39.000     16.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Item.NumberIn                               12941.    
+Item.NumberOut                              12922.    
+Packers.NumberSeized                        12925.    
+Packers.ScheduledUtilization                .87283    
+Domestic Shipping.NumberSeized              10346.    
+Domestic Shipping.ScheduledUtilization      .88423    
+International Shipping.NumberSeized         2578.0    
+International Shipping.ScheduledUtilizatio  .70755    
+System.NumberOut                            12922.    
+
+
+Simulation run time: 0.45 minutes.
+Simulation run complete.
