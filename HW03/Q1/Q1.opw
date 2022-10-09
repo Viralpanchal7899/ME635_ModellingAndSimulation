@@ -3,13 +3,19 @@ Packers
 Domestic Shipping
 International Shipping
 [VARIABLES]
+International Process.WaitTime
 Arriving item.NumberOut
 Packing Process.NumberOut
+Packing Process.WaitTime
+Domestic Process.WaitTime
+Packing Process.VATime
 Box Delivered.NumberOut
 Domestic Process.NumberIn
+Domestic Process.VATime
 Domestic Process.NumberOut
 International Package?.NumberOut False
 Packing Process.NumberIn
 International Package?.NumberOut True
+International Process.VATime
 International Process.NumberOut
 International Process.NumberIn

@@ -4,8 +4,8 @@
 
                                   Summary for Replication 1 of 1
 
-Project: Unnamed Project                                             Run execution date : 9/30/2022
-Analyst: viral                                                       Model revision date: 9/30/2022
+Project: Unnamed Project                                             Run execution date :10/ 2/2022
+Analyst: viral                                                       Model revision date:10/ 2/2022
 
 Replication ended at time      : 10000.0 Minutes 
 Base Time Units: Minutes
@@ -15,84 +15,84 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Workstation 1.VATimePerEntity               8.5000     9.8706E-16 8.5000     8.5000       1016    
-Workstation 1.TotalTimePerEntity            25.211     (Corr)     8.5000     82.731       1016    
-Workstation 4.TotalTimePerEntity            77.915     (Corr)     8.6000     179.21        994    
-Workstation 1.WaitTimePerEntity             16.711     (Corr)     .00000     74.231       1016    
-Workstation 3.WaitTimePerEntity             61.414     (Corr)     .00000     216.84       1002    
-Workstation 2.VATimePerEntity               8.3000     (Corr)     8.3000     8.3000       1015    
-Workstation 2.WaitTimePerEntity             17.672     (Corr)     .00000     103.43       1015    
-Workstation 4.VATimePerEntity               8.6000     (Corr)     8.6000     8.6000        994    
+Workstation 1.VATimePerEntity               8.5000     1.0955E-15 8.5000     8.5000       1020    
+Workstation 1.TotalTimePerEntity            17.156     (Corr)     8.5000     72.721       1020    
+Workstation 4.TotalTimePerEntity            40.011     (Corr)     8.6000     118.69        991    
+Workstation 1.WaitTimePerEntity             8.6561     (Corr)     .00000     64.221       1020    
+Workstation 3.WaitTimePerEntity             15.956     (Corr)     .00000     100.81       1002    
+Workstation 2.VATimePerEntity               8.3000     (Corr)     8.3000     8.3000       1005    
+Workstation 2.WaitTimePerEntity             44.583     (Corr)     .00000     235.97       1005    
+Workstation 4.VATimePerEntity               8.6000     (Corr)     8.6000     8.6000        991    
 Workstation 3.VATimePerEntity               8.6000     (Corr)     8.6000     8.6000       1002    
-Workstation 4.WaitTimePerEntity             69.315     (Corr)     .00000     170.61        994    
-Workstation 2.TotalTimePerEntity            25.972     (Corr)     8.3000     111.73       1015    
-Workstation 3.TotalTimePerEntity            70.014     (Corr)     8.6000     225.44       1002    
-Parts.VATime                                34.000     (Corr)     34.000     34.000        994    
-Parts.NVATime                               .00000     .00000     .00000     .00000        994    
-Parts.WaitTime                              164.71     (Corr)     .00000     258.94        994    
-Parts.TranTime                              .00000     .00000     .00000     .00000        994    
-Parts.OtherTime                             .00000     .00000     .00000     .00000        994    
-Parts.TotalTime                             198.71     (Corr)     34.000     292.94        994    
-Workstation 3.Queue.WaitingTime             61.414     (Corr)     .00000     216.84       1002    
-Workstation 1.Queue.WaitingTime             16.734     (Corr)     .00000     74.231       1017    
-Workstation 2.Queue.WaitingTime             17.654     (Corr)     .00000     103.43       1016    
-Workstation 4.Queue.WaitingTime             69.321     (Corr)     .00000     170.61        995    
+Workstation 4.WaitTimePerEntity             31.411     (Corr)     .00000     110.09        991    
+Workstation 2.TotalTimePerEntity            52.883     (Corr)     8.3000     244.27       1005    
+Workstation 3.TotalTimePerEntity            24.556     (Corr)     8.6000     109.41       1002    
+Parts.VATime                                34.000     (Corr)     34.000     34.000        991    
+Parts.NVATime                               .00000     .00000     .00000     .00000        991    
+Parts.WaitTime                              99.422     (Corr)     2.1316     277.03        991    
+Parts.TranTime                              .00000     .00000     .00000     .00000        991    
+Parts.OtherTime                             .00000     .00000     .00000     .00000        991    
+Parts.TotalTime                             133.42     (Corr)     36.131     311.03        991    
+Workstation 3.Queue.WaitingTime             15.257     (Corr)     .00000     99.197       1003    
+Workstation 1.Queue.WaitingTime             7.8883     (Corr)     .00000     62.921       1021    
+Workstation 2.Queue.WaitingTime             43.548     (Corr)     .00000     235.13       1006    
+Workstation 4.Queue.WaitingTime             30.497     (Corr)     .00000     110.09        992    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Parts.WIP                                   20.106     (Corr)     .00000     30.000     27.000    
-Workstation 2 Machine.NumberBusy            .84275     .03120     .00000     1.0000     1.0000    
+Parts.WIP                                   13.660     (Corr)     .00000     32.000     30.000    
+Workstation 2 Machine.NumberBusy            .83444     .03570     .00000     1.0000     1.0000    
 Workstation 2 Machine.NumberScheduled       1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Workstation 2 Machine.Utilization           .84275     .03120     .00000     1.0000     1.0000    
-Workstation 4 Machine.NumberBusy            .85530     .03480     .00000     1.0000     1.0000    
+Workstation 2 Machine.Utilization           .83444     .03570     .00000     1.0000     1.0000    
+Workstation 4 Machine.NumberBusy            .85269     .03944     .00000     1.0000     .00000    
 Workstation 4 Machine.NumberScheduled       1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Workstation 4 Machine.Utilization           .85530     .03480     .00000     1.0000     1.0000    
-Workstation 1 Machine.NumberBusy            .86390     (Corr)     .00000     1.0000     1.0000    
+Workstation 4 Machine.Utilization           .85269     .03944     .00000     1.0000     .00000    
+Workstation 1 Machine.NumberBusy            .86740     .01475     .00000     1.0000     1.0000    
 Workstation 1 Machine.NumberScheduled       1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Workstation 1 Machine.Utilization           .86390     (Corr)     .00000     1.0000     1.0000    
-Workstation 3 Machine.NumberBusy            .86172     .03555     .00000     1.0000     .00000    
+Workstation 1 Machine.Utilization           .86740     .01475     .00000     1.0000     1.0000    
+Workstation 3 Machine.NumberBusy            .86247     .04106     .00000     1.0000     1.0000    
 Workstation 3 Machine.NumberScheduled       1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Workstation 3 Machine.Utilization           .86172     .03555     .00000     1.0000     .00000    
-Workstation 3.Queue.NumberInQueue           6.2515     (Corr)     .00000     18.000     13.000    
-Workstation 1.Queue.NumberInQueue           1.7093     (Corr)     .00000     8.0000     4.0000    
-Workstation 2.Queue.NumberInQueue           1.7937     (Corr)     .00000     9.0000     .00000    
-Workstation 4.Queue.NumberInQueue           6.9284     (Corr)     .00000     18.000     7.0000    
+Workstation 3 Machine.Utilization           .86247     .04106     .00000     1.0000     1.0000    
+Workstation 3.Queue.NumberInQueue           1.5317     (Corr)     .00000     11.000     2.0000    
+Workstation 1.Queue.NumberInQueue           .80540     (Corr)     .00000     7.0000     .00000    
+Workstation 2.Queue.NumberInQueue           4.4759     (Corr)     .00000     24.000     14.000    
+Workstation 4.Queue.NumberInQueue           3.0727     (Corr)     .00000     13.000     10.000    
 
                                              OUTPUTS
 
 Identifier                                   Value
 _____________________________________________________________
 
-Workstation 2 Accum Wait Time               17937.    
-Workstation 4 Number Out                    994.00    
-Workstation 2 Accum VA Time                 8424.5    
+Workstation 2 Accum Wait Time               44806.    
+Workstation 4 Number Out                    991.00    
+Workstation 2 Accum VA Time                 8341.5    
 Workstation 4 Number In                     1002.0    
-Workstation 4 Accum VA Time                 8548.4    
-Workstation 1 Accum Wait Time               16978.    
-Workstation 2 Number In                     1016.0    
-Workstation 3 Number In                     1015.0    
-Workstation 2 Number Out                    1015.0    
+Workstation 4 Accum VA Time                 8522.6    
+Workstation 1 Accum Wait Time               8829.2    
+Workstation 2 Number In                     1020.0    
+Workstation 3 Number In                     1005.0    
+Workstation 2 Number Out                    1005.0    
 Workstation 3 Number Out                    1002.0    
-Workstation 4 Accum Wait Time               68899.    
-Workstation 1 Accum VA Time                 8636.0    
-Workstation 1 Number Out                    1016.0    
+Workstation 4 Accum Wait Time               31128.    
+Workstation 1 Accum VA Time                 8670.0    
+Workstation 1 Number Out                    1020.0    
 Workstation 1 Number In                     1021.0    
 Workstation 3 Accum VA Time                 8617.2    
-Workstation 3 Accum Wait Time               61537.    
+Workstation 3 Accum Wait Time               15988.    
 Parts.NumberIn                              1021.0    
-Parts.NumberOut                             994.00    
-Workstation 2 Machine.NumberSeized          1016.0    
-Workstation 2 Machine.ScheduledUtilization  .84275    
-Workstation 4 Machine.NumberSeized          995.00    
-Workstation 4 Machine.ScheduledUtilization  .85530    
-Workstation 1 Machine.NumberSeized          1017.0    
-Workstation 1 Machine.ScheduledUtilization  .86390    
-Workstation 3 Machine.NumberSeized          1002.0    
-Workstation 3 Machine.ScheduledUtilization  .86172    
-System.NumberOut                            994.00    
+Parts.NumberOut                             991.00    
+Workstation 2 Machine.NumberSeized          1006.0    
+Workstation 2 Machine.ScheduledUtilization  .83444    
+Workstation 4 Machine.NumberSeized          992.00    
+Workstation 4 Machine.ScheduledUtilization  .85269    
+Workstation 1 Machine.NumberSeized          1021.0    
+Workstation 1 Machine.ScheduledUtilization  .86740    
+Workstation 3 Machine.NumberSeized          1003.0    
+Workstation 3 Machine.ScheduledUtilization  .86247    
+System.NumberOut                            991.00    
 
                                            FREQUENCIES
 
@@ -100,23 +100,23 @@ System.NumberOut                            994.00
 Identifier                                 Category         Number  AvgTime    Percent   Percent
 ___________________________________________________________________________________________________
 
-Workstation 4 stats                        BUSY             219     39.054       85.53     85.53
-                                           IDLE             33      8.2587        2.73      2.73
-                                           FAILED           204     5.7572       11.74     11.74
+Workstation 4 stats                        BUSY             242     35.235       85.27     85.27
+                                           IDLE             54      8.4709        4.57      4.57
+                                           FAILED           205     4.9543       10.16     10.16
 
-Workstation 3 stats                        BUSY             165     52.225       86.17     86.17
-                                           IDLE             38      8.5428        3.25      3.25
-                                           FAILED           136     7.7806       10.58     10.58
+Workstation 3 stats                        BUSY             202     42.696       86.25     86.25
+                                           IDLE             75      8.6399        6.48      6.48
+                                           FAILED           143     5.0861        7.27      7.27
 
-WorkStation 2 Stats                        BUSY             406     20.757       84.27     84.27
-                                           IDLE             269     2.1193        5.70      5.70
-                                           FAILED           156     6.4257       10.02     10.02
+WorkStation 2 Stats                        BUSY             434     19.226       83.44     83.44
+                                           IDLE             252     1.9575        4.93      4.93
+                                           FAILED           195     5.9605       11.62     11.62
 
-WorkStaion 1 Stats                         BUSY             462     18.699       86.39     86.39
-                                           IDLE             271     1.1536        3.13      3.13
-                                           FAILED           198     5.2948       10.48     10.48
+WorkStaion 1 Stats                         BUSY             634     13.681       86.74     86.74
+                                           IDLE             440     1.1336        4.99      4.99
+                                           FAILED           206     4.0155        8.27      8.27
 
 
 
-Simulation run time: 0.08 minutes.
+Simulation run time: 0.10 minutes.
 Simulation run complete.

@@ -4,8 +4,8 @@
 
                                   Summary for Replication 1 of 1
 
-Project: Unnamed Project                                             Run execution date : 9/30/2022
-Analyst: viral                                                       Model revision date: 9/30/2022
+Project: Unnamed Project                                             Run execution date :10/ 2/2022
+Analyst: viral                                                       Model revision date:10/ 2/2022
 
 Replication ended at time      : 14400.0 Minutes 
 Base Time Units: Minutes
@@ -15,6 +15,15 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
+International Process.VATimePerEntity       3.4325     .02420     2.2236     4.7484       2578    
+Packing Process.VATimePerEntity             3.3508     .00500     2.7580     3.9894      12925    
+Packing Process.WaitTimePerEntity           8.2488     .97796     .00000     37.926      12925    
+Domestic Process.VATimePerEntity            2.1354     .00426     1.7014     2.6905      10344    
+International Process.WaitTimePerEntity     7.9474     1.2540     .00000     45.324       2578    
+Packing Process.TotalTimePerEntity          11.599     .97845     2.7708     41.194      12925    
+Domestic Process.TotalTimePerEntity         11.148     (Corr)     1.7219     47.010      10344    
+International Process.TotalTimePerEntity    11.379     1.2508     2.2847     48.637       2578    
+Domestic Process.WaitTimePerEntity          9.0130     (Corr)     .00000     44.517      10344    
 Item.VATime                                 5.7450     .01151     4.5429     8.5160      12922    
 Item.NVATime                                .00000     .00000     .00000     .00000      12922    
 Item.WaitTime                               17.051     (Corr)     .00000     62.414      12922    
@@ -49,6 +58,18 @@ Packing Process.Queue.NumberInQueue         7.4126     .89605     .00000     39.
 Identifier                                   Value
 _____________________________________________________________
 
+International Process Accum Wait Time       20488.    
+Packing Process Number Out                  12925.    
+Packing Process Accum Wait Time             1.0662E+05
+Domestic Process Accum Wait Time            93230.    
+Packing Process Accum VA Time               43310.    
+Domestic Process Number In                  10347.    
+Domestic Process Accum VA Time              22088.    
+Domestic Process Number Out                 10344.    
+Packing Process Number In                   12941.    
+International Process Accum VA Time         8848.9    
+International Process Number Out            2578.0    
+International Process Number In             2578.0    
 Item.NumberIn                               12941.    
 Item.NumberOut                              12922.    
 Packers.NumberSeized                        12925.    
