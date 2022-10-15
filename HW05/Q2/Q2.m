@@ -2,42 +2,51 @@ close all
 clear all
 clc
 
-L = 3048e-3;
-x =  0:0.001:L;
-E = 200e9;
-I = (50.8e-3)*((100e-3)^3)/12;
-L1 = 914e-3;
-L3 = 914e-3;
-L2 = L - L1 - L3;
+l = 3048*(10^-3);
+x =  0:0.001:l;
+e = 200*(10^9);
+I = (50.8*(10^-3))*((100*(10^-3))^3)/12;
+l1 = 914*(10^-3);
+l3 = 914*(10^-3);
+l2 = l - l1 - l3;
 
 q = -1640;
-P2 = q*L2/2;
-M2 = q*L2^2/12;
-P3 = q*L2/2;
-M3 = -q*L2^2/12;
+p2 = q*l2/2;
+m2 = q*l2^2/12;
+p3 = q*l2/2;
+m3 = -q*l2^2/12;
 
-K = @(LL) E*I/LL^3 * [12 6*LL -12 6*LL; 6*LL 4*LL^2 -6*LL 2*LL^2; -12 -6*LL 12 -6*LL; 6*LL 2*LL^2 -6*LL 4*LL^2]
-K1 = K(L1)
-K2 = K(L2)
-K3 = K(L3)
+k1 = global_stiff(l1,e,I);
+fprintf('k1 = \n');
+disp(k1)
+k2 = global_stiff(l2,e,I);
+fprintf('k2 = \n');
+disp(k2)
+k3 = global_stiff(l3,e,I);
+fprintf('k3 = \n');
+disp(k3)
 
-MainK = zeros(8);
-MainK(1:4,1:4) = K1;
-MainK(3:6,3:6) = MainK(3:6,3:6) + K2;
-MainK(5:8,5:8) = MainK(5:8,5:8) + K3
+fprintf('K = k1 + k2 + k3 \n\n');
+k_final = zeros(8);
+k_final(1:4,1:4) = k1;
+k_final(3:6,3:6) = k_final(3:6,3:6) + k2;
+k_final(5:8,5:8) = k_final(5:8,5:8) + k3
 
-Force_vec = [P2 M2 P3 M3]';
-Displacement_vec = [0; 0; MainK(3:6,3:6)\Force_vec; 0;0]
+% Calculation forces and displacements
+force_vec = [p2 m2 p3 m3]';
+displacement_vec = [0; 0; k_final(3:6,3:6)\force_vec; 0;0];
+force_vec = k_final*displacement_vec;
+fprintf('Force = \n');
+disp(force_vec)
 
-Force_vec = MainK*Displacement_vec
-
-V = @(V1,tet1,V2,tet2,Lin,zet)(1-3*zet.*zet+2*zet.*zet.*zet)*V1 + Lin*(zet-2*zet.*zet+zet.*zet.*zet)*tet1+(3*zet.*zet-2*zet.*zet.*zet)*V2+Lin*(zet.*zet.*zet-zet.*zet)*tet2;
-
-eq1 = V(Displacement_vec(1),Displacement_vec(2),Displacement_vec(3),Displacement_vec(4),L1,0:0.01:1);
-eq2 = V(Displacement_vec(3),Displacement_vec(4),Displacement_vec(5),Displacement_vec(6),L2,0:0.01:1);
-eq3 = V(Displacement_vec(5),Displacement_vec(6),Displacement_vec(7),Displacement_vec(8),L3,0:0.01:1);
-plot(linspace(0,L1,101),eq1)
+% Caculating the points on the equation
+eq_1 = displacement(displacement_vec(1),displacement_vec(2),displacement_vec(3),displacement_vec(4),l1,0:0.01:1);
+eq_2 = displacement(displacement_vec(3),displacement_vec(4),displacement_vec(5),displacement_vec(6),l2,0:0.01:1);
+eq_3 = displacement(displacement_vec(5),displacement_vec(6),displacement_vec(7),displacement_vec(8),l3,0:0.01:1);
+plot(linspace(0,l1,101),eq_1)
 hold on
-plot(linspace(L1,L1+L2,101),eq2)
+plot(linspace(l1,l1+l2,101),eq_2)
 hold on
-plot(linspace(L1+L2,L1+L2+L3,101),eq3)
+plot(linspace(l1+l2,l1+l2+l3,101),eq_3)
+legend('Eq_1','Eq_2','Eq_3')
+grid on
