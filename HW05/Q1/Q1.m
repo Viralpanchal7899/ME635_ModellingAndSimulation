@@ -1,10 +1,13 @@
+%ME635 - HW05 - Q1
+%Viral Panchal
+
 close all
 clear all
 clc
 
 l = 3048*(10^-3);
 x = 0:0.001:l;
-e = 200*(10^9);
+E = 200*(10^9);
 I = (50.8*(10^-3))*((100*(10^-3))^3)/12;
 l1 = 914*(10^-3);
 l3 = 914*(10^-3);
@@ -15,13 +18,13 @@ m2 = 0;
 p3 = -1000;
 m3 = 0;
 
-k1 = global_stiff(l1,e,I);
+k1 = global_stiff(l1,E,I);
 fprintf('k1 = \n');
 disp(k1)
-k2 = global_stiff(l2,e,I);
+k2 = global_stiff(l2,E,I);
 fprintf('k2 = \n');
 disp(k2)
-k3 = global_stiff(l3,e,I);
+k3 = global_stiff(l3,E,I);
 fprintf('k3 = \n');
 disp(k3)
 

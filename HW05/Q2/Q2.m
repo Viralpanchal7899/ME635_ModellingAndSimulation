@@ -1,10 +1,13 @@
+% ME635 - HW05 - Q2
+% ViralPanchal
+
 close all 
 clear all
 clc
 
 l = 3048*(10^-3);
 x =  0:0.001:l;
-e = 200*(10^9);
+E = 200*(10^9);
 I = (50.8*(10^-3))*((100*(10^-3))^3)/12;
 l1 = 914*(10^-3);
 l3 = 914*(10^-3);
@@ -16,13 +19,13 @@ m2 = q*l2^2/12;
 p3 = q*l2/2;
 m3 = -q*l2^2/12;
 
-k1 = global_stiff(l1,e,I);
+k1 = global_stiff(l1,E,I);
 fprintf('k1 = \n');
 disp(k1)
-k2 = global_stiff(l2,e,I);
+k2 = global_stiff(l2,E,I);
 fprintf('k2 = \n');
 disp(k2)
-k3 = global_stiff(l3,e,I);
+k3 = global_stiff(l3,E,I);
 fprintf('k3 = \n');
 disp(k3)
 
@@ -50,3 +53,21 @@ hold on
 plot(linspace(l1+l2,l1+l2+l3,101),eq_3)
 legend('Eq_1','Eq_2','Eq_3')
 grid on
+
+% Slope
+slope_eq = zeros();
+for r = 1:(length(eq_1)-1)
+    slope_eq(r,1) = ((eq_1(1,r+1)-eq_1(1,r))/l1)*100;
+    slope_eq(r,2) = ((eq_2(1,r+1)-eq_2(1,r))/l2)*100;
+    slope_eq(r,3) = ((eq_3(1,r+1)-eq_3(1,r))/l3)*100;
+end
+
+figure
+plot(linspace(0,l1,100),slope_eq(:,1))
+hold on
+plot(linspace(l1,l1+l2,100),slope_eq(:,2))
+hold on 
+plot(linspace(l1+l2,l1+l2+l3,100),slope_eq(:,3))
+legend('eq_1','eq_2','eq_3')
+grid on 
+title('Slope plot');
