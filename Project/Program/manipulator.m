@@ -1,7 +1,4 @@
-close all 
-clear all
-clc
-
+function [T,J_gen] = manipulator()
 % Defining symbolic variables
 syms q1 q2 q3 q4 q5 a1 a2 a3 a4 a5 
 assume(q1,'real')
@@ -26,35 +23,9 @@ A5 = tf_mat(q5,0,a5,0);
 
 
 % Computing final homogenous transformation matrix
-T = A1*A2*A3*A4*A5;
-
-% % Forward kinematics
-% X = T(1,4);
-% Y = T(2,4);
-% Z = T(3,4);
-% 
-% % Defing variables for RRA
-% p_d = [5 5 5];
-% p_c = [2,2,2];
-% 
-% % Getting pose for initial joint coordinates
-
-
+T = A1*A2*A3*A4*A5 
 
 % Computing Jacobian - generalized equation
 J_gen = Jacobian(T(1,4),T(2,4),T(3,4),q1,q2,q3,q4,q5)
 
-% Computing inverse of Jacobian Matrix
-% rho = 1;
-% I = eye(3);
-% J_inv = inv(J*J' + rho*I)
-
-% J_inv = pinv(J);
-
-% % Computing the Jacobian Matrix and its inverse
-% X = T(1,4);
-% Y = T(2,4);
-% Z = T(3,4);
-% 
-% J = jacobian([X,Y,Z],[q1;q2;q3;q4;q5]);
-% J_inv = pinv(J);
+end
