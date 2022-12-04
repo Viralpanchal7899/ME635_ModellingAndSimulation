@@ -1,0 +1,30 @@
+% Defining link lengths
+a1 = 3;
+a2 = 3;
+a3 = 3;
+a4 = 3;
+a5 = 3;
+
+% Forward kinematics
+X = T(1,4);
+Y = T(2,4);
+Z = T(3,4);
+
+% Defing variables for RRA
+p_d = [-5;1;4];
+% p_c = [2,2,2];
+
+% Getting pose for initial joint coordinates
+q1 = 0;
+q2 = 30;
+q3 = 90;
+q4 = 90;
+q5 = 30;
+
+q = [q1;q2;q3;q4;q5];
+% Getting the current position coordinates for the above joint coordinates
+p_c = [subs(X); subs(Y); subs(Z)]
+
+plot3(subs(X),subs(Y),subs(Z),'r*')
+grid on 
+legend('initial point')
