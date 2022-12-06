@@ -9,12 +9,12 @@ v_min = 0.1;
 lambda_p = 5;
 delta_t = 1;
 p_c = [subs(X);subs(Y);subs(Z)];
-position_eps = 1;
+position_eps = 1e-3;
 position_err = (sqrt((p_d - p_c)'*(p_d-p_c)));
 
 %Computing Jacobian
-J = subs(J_gen);
-J_inv = pinv(J);
+% J = subs(J_gen);
+% J_inv = pinv(J);
 % q_old = q; 
 iter = 1;
 plot(iter,position_err,'ro');
@@ -23,8 +23,8 @@ tic
 while position_err > position_eps
     
     % Computing Jacobian
-    % J = subs(J_gen);
-    % J_inv = pinv(J);
+    J = subs(J_gen);
+    J_inv = pinv(J);
     hold on
     plot(iter,position_err,'ro');
     legend('Position Error')
@@ -33,7 +33,7 @@ while position_err > position_eps
     axis padded
     
     % for desired position velocity p_d_dot = ||v||*n_hat
-    n_hat = ((p_d-p_c)./(p_d-p_c));
+    n_hat = ((p_d-p_c)./norm(p_d-p_c));
     if (position_err/position_eps)<=lambda_p
         v_tilde = v_min + (((v_max-v_min)*(position_err-position_eps))/(position_eps*(lambda_p-1)));
     else
