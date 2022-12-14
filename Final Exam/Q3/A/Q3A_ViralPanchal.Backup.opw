@@ -1,0 +1,16 @@
+[RESOURCES]
+Check In Nurse
+Examination Room
+[VARIABLES]
+Patient Type.NumberOut False
+Check In.WaitTime
+Patient Treatment.VATime
+Patient Type.NumberOut True
+Check In.VATime
+Check In.NumberOut
+Check In.NumberIn
+Go home.NumberOut
+Patient Treatment.NumberIn
+Patient Treatment.NumberOut
+Patient Arrivals.NumberOut
+Patient Treatment.WaitTime
